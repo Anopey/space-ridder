@@ -6,7 +6,7 @@ text = f.read()
 
 formatted = ""
 lengthminus = len(text) - 1
-flag = false
+flag = False
 for i in range(0, lengthminus):
 	flag = (text[i + 1] == '\n')
 	if(text[i] != '\n' or flag):
