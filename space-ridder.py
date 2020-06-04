@@ -10,9 +10,9 @@ flag = False
 for i in range(0, lengthminus):
 	flag = (text[i + 1] == '\n')
 	if(text[i] != '\n' or flag):
-		if(flag) or text[i] == '\n':
-			formatted += '\n' #dont get rid of double \n
 		formatted += text[i]
+		if(flag) and text[i] == '\n':
+			formatted += '\n' #dont get rid of double \n
 		continue
 	formatted += ' '
 #now for last index without losing performance
