@@ -8,7 +8,6 @@ formatted = ""
 lengthminus = len(text) - 1
 flag = false
 for i in range(0, lengthminus):
-	flag = false
 	flag = (text[i + 1] == '\n')
 	if(text[i] != '\n' or flag):
 		if(flag) || text[i] == '\n':
