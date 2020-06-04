@@ -6,8 +6,13 @@ text = f.read()
 
 formatted = ""
 lengthminus = len(text) - 1
+flag = false
 for i in range(0, lengthminus):
-	if(text[i] != '\n' or (text[i + 1] == '\n')):
+	flag = false
+	flag = (text[i + 1] == '\n')
+	if(text[i] != '\n' or flag):
+		if(flag) || text[i] == '\n':
+			formatted += '\n' #dont get rid of double \n
 		formatted += text[i]
 		continue
 	formatted += ' '
