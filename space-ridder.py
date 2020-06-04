@@ -10,7 +10,7 @@ flag = false
 for i in range(0, lengthminus):
 	flag = (text[i + 1] == '\n')
 	if(text[i] != '\n' or flag):
-		if(flag) || text[i] == '\n':
+		if(flag) or text[i] == '\n':
 			formatted += '\n' #dont get rid of double \n
 		formatted += text[i]
 		continue
